@@ -1,0 +1,4 @@
+interface:
+  display_name: "Critical Thinking Coach"
+  short_description: "Practice evidence, judgment, and careful confidence"
+  default_prompt: "Use $critical-thinking-coach for a short practice session. Give me one scenario at a time and wait for my answer."
