@@ -1,52 +1,52 @@
 # Critical Thinking Coach
 
-Critical Thinking Coach is a skill for practicing one reasoning move at a time through short, fictional scenarios and evidence-linked feedback. It assesses what a response shows without inferring intelligence, personality, diagnosis, or general ability.
+Practice critical thinking using a real situation from your own life, one small question at a time. The coach helps you examine your evidence and reasoning, reach your own conclusion, and decide what to check next. It does not pretend to know hidden causes or tell you what your life “really” means.
 
-## Six reasoning focuses
+## How it works
 
-- Separate a claim from its supporting evidence.
-- Consider alternative causes.
-- Check base rates and numerical denominators.
-- Trace sources and seek independent corroboration.
-- Represent an opposing position fairly.
-- Match confidence to evidence and revise when evidence strengthens.
+Start with a situation you want to understand. Clarify the question and what matters to you, then work through these checks incrementally:
 
-## Using the skill
+| Check | What you practice |
+| --- | --- |
+| Evidence | Separate what you observed from how you interpret it. |
+| Source quality | Ask how well placed a source is to know this particular claim. |
+| Assumptions | Notice what your conclusion takes for granted. |
+| Reasoning | Check whether the evidence supports the conclusion and its scope. |
+| Alternatives | Consider other explanations or useful options. |
+| Uncertainty | Identify what remains unknown and what could change your mind. |
 
-After installing the `critical-thinking-coach` folder in a skill-capable assistant, try a coaching session with this prompt:
+The coach waits for your answer, offers brief evidence-linked feedback, and lets you revise your reasoning. When useful, it helps you design a small, safe test. It follows your pace rather than presenting a long questionnaire or starting fictional scenarios automatically.
 
-```text
-Use $critical-thinking-coach for a short practice session. Give me one scenario at a time and wait for my answer.
-```
+## Try it
 
-A typical session is approximately 5–8 minutes as a practical estimate, not a measured duration. Coaching usually moves from a baseline attempt to a supported retry, then a fresh scenario that calls for the same reasoning move in a different context. You can stop, skip, change focus, switch modes, or request a hint at any time.
-
-To ask for assessment without coaching, use:
+After installing the `critical-thinking-coach` folder in a skill-capable assistant:
 
 ```text
-Use $critical-thinking-coach in assess-only mode. Give me one scenario at a time and wait for my answer. Give informal observations for each reasoning focus you assess, without hints, lessons, or coached retries.
+Use $critical-thinking-coach. Ask me about a situation from my life and help me think it through, one small question at a time.
 ```
 
-Observations are informal and tied to the reasoning shown in each case. There is no overall intelligence score, and the anchors are not a validated assessment. A supported retry is practice, not independent evidence of mastery. Do not treat practice as proof of lasting learning or transfer.
-
-## Repository files
+Or bring a specific situation:
 
 ```text
-README.md
-critical-thinking-coach/
-├── SKILL.md
-├── agents/
-│   └── openai.yaml
-└── references/
-    ├── evidence-notes.md
-    ├── quality-checklist.md
-    └── exercises.md
+Use $critical-thinking-coach. I’m deciding whether to change my study routine. Help me clarify what evidence I need before deciding.
 ```
+
+These sample requests are generic, not records of anyone’s private session. You can omit names, anonymize details, decline a question, stop, or change focus. Fictional practice is available only if you request or accept it.
+
+## Feedback and limits
+
+Feedback concerns the reasoning you demonstrate, not your intelligence, personality, or diagnosis. Scores are optional and informal; no overall intelligence score or validated assessment is provided. An assisted retry does not prove independent mastery, and practice does not guarantee lasting transfer.
+
+Ask for **assess-only** if you want observations on your reasoning without hints or coached retries. Qualitative confidence is welcome; percentages are optional. Strong evidence can justify confidence, while “not enough information yet” can be a useful conclusion when its limits are clear.
+
+The coach does not invent facts, verify sources it has not checked, infer other people’s motives, or pressure you to disclose private details. It is not a substitute for qualified professional advice or factual investigation. Personal session details must not be reused in public examples without specific authorization.
+
+## Files
 
 - [Skill instructions](critical-thinking-coach/SKILL.md)
 - [Assistant metadata](critical-thinking-coach/agents/openai.yaml)
+- [Real-life practice prompts](critical-thinking-coach/references/exercises.md)
+- [Quality checklist and optional scoring anchors](critical-thinking-coach/references/quality-checklist.md)
 - [Evidence notes](critical-thinking-coach/references/evidence-notes.md)
-- [Quality checklist and scoring anchors](critical-thinking-coach/references/quality-checklist.md)
-- [Prepared exercises](critical-thinking-coach/references/exercises.md)
 
-The reference exercise keys are for the tutor and are withheld until the learner attempts a case. The evidence notes describe research that informed design choices; none of the cited studies tested this skill.
+The evidence notes describe research that informed the design. None of those studies tested this skill.
