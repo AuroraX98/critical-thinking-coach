@@ -1,6 +1,6 @@
 # Critical Thinking Coach
 
-Practice critical thinking using a real situation from your own life, one small question at a time. The coach helps you examine your evidence and reasoning, reach your own conclusion, and decide what to check next. It does not pretend to know hidden causes or tell you what your life “really” means.
+An AI-agent skill for practicing critical thinking using a real situation from your own life, one small question at a time. The coach helps you examine your evidence and reasoning, reach your own conclusion, and decide what to check next. It does not pretend to know hidden causes or tell you what your life “really” means.
 
 ## Compatible AI assistants
 
