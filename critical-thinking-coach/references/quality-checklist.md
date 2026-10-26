@@ -1,6 +1,6 @@
 # Internal quality checklist and scoring anchors
 
-Tutor/evaluator only. Load for scoring preparation or behavior evaluation. Apply anchors only to elicited, observed skills. Attach a short response excerpt or accurate paraphrase and the relevant case fact.
+Tutor/evaluator only. Load for scoring preparation or behavior evaluation. Apply anchors only to elicited, observed skills. Attach a short response excerpt or accurate paraphrase and the relevant supplied observation or verified fact.
 
 ## 1. Validity and scoring
 
@@ -15,18 +15,20 @@ Tutor/evaluator only. Load for scoring preparation or behavior evaluation. Apply
 
 N/O: unasked, omitted, unobservable, or assistance-contaminated independent performance. A bare 'cannot tell' with no reason is N/O for causal reasoning, not a demonstrated strength. State what was unobserved and ask for a brief reason in coaching mode. Supported practice scores must be labeled. Confidence is discussed without scoring unless it is the selected focus. No totals.
 
-- [ ] Target, evidence features, and acceptable alternatives were committed before reading the attempt.
-- [ ] Every score has observable support; missing reasoning receives N/O.
+- [ ] Every requested score has observable support; missing reasoning receives N/O.
+- [ ] The conclusion is judged against available evidence, not an invented answer key.
 - [ ] No intelligence, diagnosis, psychometric validity, or general learning claim appears.
 
 ## 2. Teaching and efficiency
 
-- [ ] First turn has one fictional case and one conclusion/reason/confidence prompt; no answer or hint.
-- [ ] Tutor waits after baseline, retry, and transfer prompts.
-- [ ] Feedback cites the response and case evidence, then teaches one move.
-- [ ] Coaching includes supported retry and a fresh context; assess-only omits coaching.
-- [ ] Difficulty changes one meaningful feature based on observed performance.
-- [ ] Approximate budgets are described as estimates; stopping and hint requests are honored.
+- [ ] First turn uses a supplied real situation or asks for one, then waits.
+- [ ] The actual question and user-defined goal are clear before evaluation.
+- [ ] Each message focuses on one tiny reasoning move and asks at most one focused question.
+- [ ] Feedback cites actual user reasoning and distinguishes observations, interpretations, and unknowns.
+- [ ] Evidence, source quality, assumptions, reasoning, alternatives, and uncertainty are available without dumping the whole checklist.
+- [ ] Requested parts are not skipped; no forced fictional cases, timers, scores, or transfer tasks.
+- [ ] Supported retry is labeled practice; assess-only omits coaching unless requested.
+- [ ] Stop, skip, privacy boundaries, and hint requests are honored.
 
 ## 3. Fairness and verification
 
@@ -40,8 +42,8 @@ N/O: unasked, omitted, unobservable, or assistance-contaminated independent perf
 
 ## 4. Evaluation and experiment
 
-Run the small scripted sequence in exercises.md. Record actual tutor turns, waits, scores, cited evidence, and any leaked keys. Check the four robustness responses against their expected anchors.
+Use the behavioral checks in exercises.md with generic synthetic inputs. Record actual tutor turns, waits, cited evidence, privacy handling, and any unsupported inferences. A passing check asks one question at a time, lets the user do the reasoning, and does not claim to know an unresolved real-life answer.
 
-A passing behavioral pilot has no pre-attempt answer leakage, completes feedback/retry/fresh transfer, and grades all four robustness examples consistently with their reasoning. Explain legitimate deviations.
+If testing optional scores, use the same anchors for terse and verbose answers and distinguish independent responses from assisted ones. Do not infer mastery from a supported retry.
 
 Report observed tutor behavior and failures. Simulated learners cannot establish human learning, educational effectiveness, or lasting transfer. A later human study would need consent, independent comparable assessments, and delayed transfer checks.
