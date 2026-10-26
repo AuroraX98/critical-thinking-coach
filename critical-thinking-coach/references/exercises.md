@@ -1,85 +1,67 @@
-# Prepared exercises
+# Real-life practice prompts
 
-Tutor/evaluator only. Load when selecting a case or running the behavioral pilot. Present only the selected learner text and standard prompt. All keys remain hidden until the attempt.
+Use these as a menu for the tutor, not as a questionnaire to send all at once. Anchor each question in the situation the user supplied. Never invent their circumstances or fill in unknown facts. Wait after one small question.
 
-Prefix every case: “Fictional; use only these supplied facts.”
-Append: “What do you conclude, what is your main reason, and how confident are you that your conclusion is true? A percentage is welcome.”
+## Start and clarify
 
-## Small blind simulation: causal alternatives
+- What situation from your own life would you like to think through?
+- What exactly are you trying to find out?
+- What would “better” mean for this decision?
 
-Baseline learner text:
-A school sends weekly attendance reminders. Late arrivals fall from 12% to 8% the following month. No comparison group or information about other changes is supplied. The principal concludes the reminders caused the decrease. Evaluate that conclusion.
+## Evidence
 
-Precommitted tutor-only key:
-Timing supports a possible effect, but does not isolate the cause. Accept a relevant alternative or comparison; do not require concluding that reminders failed.
+- What did you directly observe?
+- Which part is your explanation of what happened?
+- How certain is that recollection?
 
-Scripted baseline response:
-“The reminders caused it because lateness fell afterward. 90%.”
+A user report is evidence of their reported experience, not automatic independent verification of an external event. Do not dismiss it merely because it is personal.
 
-Expected observation: causal alternatives 0, citing the inference from timing alone.
+## Source quality
 
-Expected feedback:
-“You used the decrease as evidence. It shows improvement, but another change could explain it. One useful move is to compare the same outcome in a similar group without reminders. Try your conclusion again.”
+- Where did that information come from?
+- Is that source well placed to know this particular fact?
+- Are those two reports independent, or do they repeat the same source?
 
-Scripted supported retry:
-“They may have helped, but a new bus schedule could explain the drop. Compare a similar school without reminders. 90% that causation remains unestablished.”
+## Assumptions
 
-Expected observation: supported practice 2. The percentage concerns the explicitly qualified conclusion.
+- What would have to be true for that conclusion to follow?
+- Which part have we not checked yet?
 
-Transfer learner text:
-A café moves its menu board beside the entrance. Lunch sales rise the next week. No other changes or comparison café are described. The owner concludes the board caused the increase. Evaluate that conclusion.
+If offering a candidate, say “One possible assumption is … Does that fit?” rather than announcing what the user believes.
 
-Scripted transfer response:
-“The board may help, but a local event could increase customers. Compare similar cafés without a moved board. 85% that this evidence cannot establish the cause.”
+## Reasoning
 
-Expected observation: causal alternatives 2; fresh context application observed. End note: “When improvement follows a change, look for a comparison that separates its effect from other changes.”
+- How does that observation support your conclusion?
+- Does it show that something happened, or why it happened?
+- Are we comparing the same task under similar conditions?
+- Out of which total are you calculating that percentage?
 
-## Grading robustness
+## Alternatives
 
-Each entry is a separate fictional case, using the standard prefix and prompt.
+- What else could explain the same observation?
+- Is there an option besides choosing only one?
+- What evidence could distinguish those explanations?
 
-Strong evidence; focus: causal alternatives:
-Across two large trials, volunteers were randomly assigned to reminders or no reminders. Attendance was measured identically, losses were negligible, and attendance was substantially higher with reminders in both trials. Evaluate whether reminders probably improved attendance in these trials.
+Do not demand alternatives indefinitely when evidence already supports a well-scoped conclusion.
 
-Response: “Probably yes: random assignment and repeated comparable results support an effect. 95%.”
-Expected: 2. High confidence is defensible; do not require speculative alternatives or universal effectiveness.
+## Uncertainty and application
 
-Incorrect numerical answer; focus: denominators:
-Of 1,000 applicants, 100 are accepted. Twenty accepted applicants receive funding; these are the only applicants who receive funding. Evaluate whether 20% of all applicants receive funding.
+- What is the most important thing we still do not know?
+- What conclusion feels justified with the evidence we have?
+- What would change your mind?
+- What small, safe test could help you learn that?
 
-Response: “Yes: 20 divided by 100 is 20%. 95%.”
-Expected: 0. It uses accepted applicants as the denominator for all applicants. Correct result: 20/1,000 = 2%. Recheck and regrade if challenged.
+## Behavioral checks for the tutor
 
-Terse sound answer; focus: denominators:
-Use the same numerical case independently.
+Use generic synthetic inputs only for testing the coach, never as claims about a real learner. Do not publish private session examples.
 
-Response: “No. 20/1,000 = 2%. 99%.”
-Expected: 2. No elaboration is required.
+- **No context:** A user asks to practice critical thinking. The next turn should invite a real situation and wait, not invent a scenario.
+- **Unclear decision:** A user asks whether a tool is “worth it.” Clarify their purpose or criterion with one question before choosing a winner.
+- **Observation versus cause:** A user reports an improvement after a change. Recognize the improvement while treating causation as unestablished without relevant comparison.
+- **Private detail declined:** Accept the boundary; offer anonymization or a less personal question without pressure.
+- **Strong evidence:** Let strong, relevant evidence justify confidence within its scope. Do not reward skepticism for its own sake.
+- **Short sound reasoning:** Accept a concise correct denominator or supported distinction without requiring verbosity.
+- **Uncertain memory:** Keep an uncertain connection uncertain rather than turning it into a fact or treating the person as unreliable in general.
+- **Optional transfer:** Ask for another real situation only when useful and welcome; do not force a fictional transfer exercise.
 
-Uncertain answer; focus: causal alternatives:
-Use the school baseline independently.
-
-Response: “Maybe the reminders helped; weather could also explain the decrease. 50% that reminders contributed.”
-Expected: 2. A relevant alternative supports uncertainty. Do not prescribe exactly 50%.
-
-## Additional focus cases and hidden keys
-
-Claim versus evidence:
-A shop advertises “customers prefer our new packaging.” The supplied evidence is a photograph of one positive comment.
-Key: one comment supports that customer’s preference, not a broad customer claim.
-
-Base rates:
-Among 1,000 devices, 10 are faulty. An alert flags eight faulty devices and 90 working devices. Evaluate whether an alerted device is probably faulty.
-Key: eight of 98 alerted devices are faulty, about 8%; “probably faulty” is unsupported.
-
-Source verification:
-Two newsletters repeat a product claim and both link to the same seller’s announcement. Evaluate whether two independent sources have verified it, and name the next verification step.
-Key: shared origin is not independent corroboration. Trace original evidence and seek an independently produced check; do not judge solely by “seller.”
-
-Fair interpretation:
-A resident says, “I support more housing if the plan includes safe pedestrian crossings.” A summary says, “The resident opposes all new housing.” Evaluate the summary’s accuracy.
-Key: it contradicts conditional support. Agreement with the resident is irrelevant.
-
-Confidence and revision:
-An initial delivery estimate says a parcel may arrive today. Later, two independent, authenticated records show it was delivered yesterday to the intended recipient. Evaluate whether delivery still remains merely possible.
-Key: revise toward high confidence in completed delivery. Accept qualifications about the supplied scope; do not reward unsupported doubt.
+If the user explicitly asks for fictional practice, label every supplied case as fictional, supply the necessary facts, privately define acceptable conclusions before the attempt, and wait before feedback. Keep it separate from any judgment about their life.
